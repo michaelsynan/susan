@@ -7,7 +7,7 @@
 
     <!-- Cursor Star -->
     <div ref="star" class="fixed pointer-events-none z-50 text-4xl transition-none"
-      style="transform: translate(-50%, -50%)">
+      style="transform: translate(-50%, -50%);">
       ⭐
     </div>
   </div>
@@ -19,6 +19,7 @@ let mouseX = 0
 let mouseY = 0
 let starX = 0
 let starY = 0
+let rotation = 0
 
 const updateStarPosition = () => {
   if (!star.value) return
@@ -33,8 +34,12 @@ const updateStarPosition = () => {
   starX += dx * damping
   starY += dy * damping
 
+  // Slow rotation around its center
+  rotation += 0.3 // Much slower rotation
+
   star.value.style.left = starX + 'px'
   star.value.style.top = starY + 'px'
+  star.value.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`
 
   requestAnimationFrame(updateStarPosition)
 }

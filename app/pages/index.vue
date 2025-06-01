@@ -6,6 +6,7 @@
     <SharedPageWrapper>
       <HomeInfo />
       <HomeServices />
+      <HomeMailingList />
     </SharedPageWrapper>
   </div>
 </template>

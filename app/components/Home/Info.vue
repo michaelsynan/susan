@@ -15,16 +15,16 @@
       <UIcon name="i-mdi-hands-pray" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> ADIPISCING ELIT
       SED DO
       EIUSMOD
-      TEMPOR INCIDIDUNT UT
-      LABORE ET DOLORE MAGNA
-      ALIQUA UT ENIM AD MINIM VENIAM QUIS
-      <UIcon name="i-mdi-balloon" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> NOSTRUD
+      TEMPOR <span class="text-black/30">INCIDIDUNT</span> UT LABORE ET DOLORE MAGNA ALIQUA UT <span
+        class="text-black/40">ENIM AD</span> MINIM VENIAM
+      QUIS
+      <UIcon name="i-mdi-balloon" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> nostrud
       EXERCITATION
       ULLAMCO LABORIS
       NISI UT ALIQUIP EX EA COMMODO CONSEQUAT
 
       <UIcon name="i-mdi-star-shooting" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> DUIS AUTE
-      IRURE DOLOR
+      <span class="text-black/40">IRURE DOLOR</span>
       IN
       REPREHENDERIT
     </p>

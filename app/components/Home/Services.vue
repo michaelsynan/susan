@@ -2,19 +2,19 @@
 const services = ref([
   {
     title: "SINGLE SESSION",
-    description: "ONE-ON-ONE PHONE OR VIDEO SESSION FOCUSED ON YOUR GROWTH AND MENTAL HEALTH.",
+    description: "One-on-one phone or video session focused on your growth and mental health.",
     bgColor: "bg-emerald-400",
     textColor: "text-emerald-400"
   },
   {
     title: "GROUP CHATS",
-    description: "CONNECT WITH PEERS IN A WARM & SUPPORTIVE GROUP ENVIRONMENT VIA CHAT, VIDEO & CALL.",
+    description: "Connect with peers in a warm & supportive group environment via chat, video & call.",
     bgColor: "bg-yellow-300",
     textColor: "text-yellow-300"
   },
   {
     title: "PEER COACHING",
-    description: "LONG-TERM SUPPORT AND COACHING FROM YOURS TRULY TO HELP YOU NAVIGATE LIFE SITUATIONS.",
+    description: "Long-term support and coaching from yours truly to help you navigate life situations.",
     bgColor: "bg-white",
     textColor: "text-white"
   }
@@ -23,7 +23,7 @@ const services = ref([
 
 <template>
   <div class="py-32 px-6">
-    <h2 class="text-4xl md:text-6xl font-black text-black mb-14 text-center uppercase">
+    <h2 class="text-4xl md:text-6xl font-black text-black mb-16 text-center uppercase">
       SERVICES
     </h2>
 
