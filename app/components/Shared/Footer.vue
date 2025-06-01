@@ -9,14 +9,14 @@
       </div>
 
       <!-- Privacy Policy and TOS -->
-      <div class="hidden md:flex gap-4 text-xs">
+      <!-- <div class="hidden md:flex gap-4 text-xs">
         <NuxtLink to="/privacy" class="text-white font-bold hover:text-white transition-colors">
           PRIVACY POLICY
         </NuxtLink>
         <NuxtLink to="/terms" class="text-white hover:text-white transition-colors font-bold ">
           TERMS OF SERVICE
         </NuxtLink>
-      </div>
+      </div> -->
 
       <!-- Instagram Icon -->
       <div class="bg-emerald-400 border-4 border-black rounded-full p-4 w-16 h-16 flex items-center justify-center">
