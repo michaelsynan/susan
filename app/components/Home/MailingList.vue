@@ -45,7 +45,7 @@ const handleSubmit = () => {
           </button>
         </div>
 
-        <p v-if="!isValidEmail" class="text-red-500 font-bold text-sm uppercase mt-4">
+        <p v-if="!isValidEmail" class="!text-red-500 font-bold text-sm uppercase mt-4">
           [ PLEASE ENTER A VALID EMAIL ]
         </p>
       </div>

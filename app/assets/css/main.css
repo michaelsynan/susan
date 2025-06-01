@@ -18,3 +18,14 @@ h6,
   @apply font-bold !text-gray-900;
   font-family: "Tilt Neon", sans-serif;
 }
+
+/* Custom text selection colors */
+::selection {
+  background-color: rgba(253, 224, 71, 0.7); /* yellow-300 with 70% opacity */
+  color: #000000; /* black text */
+}
+
+::-moz-selection {
+  background-color: rgba(253, 224, 71, 0.7); /* yellow-300 with 70% opacity */
+  color: #000000; /* black text */
+}
