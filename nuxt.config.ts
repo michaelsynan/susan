@@ -4,6 +4,9 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/image", "@nuxt/ui", "@nuxt/fonts"],
   devtools: { enabled: true },
+  colorMode: {
+    preference: "light",
+  },
 
   future: {
     compatibilityVersion: 4,
