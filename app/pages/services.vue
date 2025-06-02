@@ -2,7 +2,9 @@
 
 <template>
   <div>
-    Page: services
+    <ServicesIntro />
+    <ServicesAll />
+    <SharedContact />
   </div>
 </template>
 

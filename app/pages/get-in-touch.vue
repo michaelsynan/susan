@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    Page: get-in-touch
+    <ContactIntro />
+    <ContactForm />
   </div>
 </template>
 

@@ -2,7 +2,9 @@
 
 <template>
   <div>
-    Page: about
+    <AboutIntro />
+    <AboutExtra />
+    <SharedContact />
   </div>
 </template>
 

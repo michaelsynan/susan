@@ -23,7 +23,7 @@ const services = ref([
 
 <template>
   <div class="py-32 px-6">
-    <h2 class="text-4xl md:text-6xl font-black text-black mb-16 text-center uppercase">
+    <h2 class="tracking-widest text-4xl md:text-6xl font-black text-black mb-16 text-center uppercase">
       SERVICES
     </h2>
 
