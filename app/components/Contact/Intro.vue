@@ -4,7 +4,7 @@
   <div class="pt-32 pb-4 px-6 bg-yellow-50">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl md:text-6xl font-black text-black mb-8 uppercase display">
-        GET IN TOUCH ABOUT PEER COACHING
+        Let's Chat OK?
       </h2>
 
       <p class="text-lg md:text-xl text-black leading-relaxed max-w-2xl mx-auto">
