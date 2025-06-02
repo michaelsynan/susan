@@ -12,4 +12,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
   css: ["~/assets/css/main.css"],
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
 });

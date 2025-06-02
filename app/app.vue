@@ -2,7 +2,9 @@
   <div class="bg-yellow-50 min-h-screen">
     <NuxtRouteAnnouncer />
     <SharedNav />
-    <NuxtPage class="pt-20" />
+    <div>
+      <NuxtPage class="pt-20" />
+    </div>
     <SharedFooter />
 
     <!-- Cursor Star -->
@@ -63,3 +65,16 @@ onMounted(() => {
   })
 })
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}
+</style>
