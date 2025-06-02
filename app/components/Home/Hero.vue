@@ -15,7 +15,8 @@
     </div> -->
 
     <div class="w-full md:w-1/2 flex flex-col items-start justify-center relative z-10 p-10 md:p-0">
-      <h1 class="text-center md:text-left text-6xl md:text-8xl font-bold mb-8 text-black max-w-[18ch] leading-tight">
+      <h1
+        class="text-center md:text-left text-5xl sm:text-6xl md:text-8xl font-bold mb-8 text-black max-w-[18ch] leading-tight">
         PEER COACHING FOR COOL
         FOLKS</h1>
       <button
@@ -25,8 +26,8 @@
     </div>
     <div class="w-full md:w-1/2 flex justify-center relative z-10">
       <nuxt-img src="/susan-removebg.png" placeholder
-        class="rounded-full h-[300px] sm:h-[400px] md:h-[600px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-4 ease-in-out transition-all duration-300 border-4"
-        style="box-shadow: -10px 10px 0px 0px rgba(0,0,0,1), -20px 20px 0px 0px rgba(0,0,0,1), -30px 30px 0px 0px rgba(0,0,0,1), -40px 40px 0px 0px rgba(0,0,0,1);" />
+        class="rounded-full h-[300px] sm:h-[400px] md:h-[600px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-4 ease-in-out transition-all duration-300 border-4 md:[box-shadow:var(--md-shadow)]"
+        style="box-shadow: -5px 5px 0px 0px rgba(0,0,0,1), -10px 10px 0px 0px rgba(0,0,0,1); --md-shadow: -10px 10px 0px 0px rgba(0,0,0,1), -20px 20px 0px 0px rgba(0,0,0,1), -30px 30px 0px 0px rgba(0,0,0,1), -40px 40px 0px 0px rgba(0,0,0,1);" />
     </div>
   </div>
 </template>

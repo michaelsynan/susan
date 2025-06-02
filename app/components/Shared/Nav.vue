@@ -8,10 +8,10 @@ const toggleMenu = () => {
 
 <template>
   <nav
-    class="flex flex-row justify-between items-center border-b-4 border-black py-4 px-6 bg-yellow-50 fixed w-full z-100">
-    <!-- Logo/Title -->
+    class="flex flex-row justify-between items-center border-b-4 border-black py-4 px-6 bg-yellow-50 fixed w-full z-50">
+    <!-- Logo/Title - ALWAYS VISIBLE -->
     <NuxtLink to="/"
-      class="text-2xl font-bold display text-black hover:text-emerald-600 transition-colors transform -skew-y-3 cool">
+      class="text-2xl font-bold display text-black hover:text-emerald-600 transition-colors transform -skew-y-3 cool z-[60] relative">
       PEER COACHING
     </NuxtLink>
 
@@ -36,8 +36,9 @@ const toggleMenu = () => {
     </div>
 
     <!-- Mobile Menu Button -->
-    <button @click="toggleMenu" class="md:hidden text-2xl font-bold text-black z-50 relative">
-      {{ isMenuOpen ? '✕' : '☰' }}
+    <button @click="toggleMenu"
+      class="md:hidden text-lg font-bold text-black z-[60] relative border-4 border-black bg-white w-24 h-12 flex items-center justify-center">
+      {{ isMenuOpen ? 'CLOSE' : 'MENU' }}
     </button>
 
     <!-- Mobile Menu Overlay -->

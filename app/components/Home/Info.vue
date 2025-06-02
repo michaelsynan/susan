@@ -4,10 +4,14 @@
   <div
     class="relative py-18 px-10 border-b-4 overflow-hidden bg-gradient-to-bl from-yellow-50 via-yellow-100/50 to-emerald-50">
     <!-- Top left circle -->
-    <div class="absolute -top-64 -left-64 w-128 h-128 bg-emerald-400 border-4 border-black rounded-full"></div>
+    <div
+      class="absolute -top-32 -left-32 w-64 h-64 md:-top-64 md:-left-64 md:w-128 md:h-128 bg-emerald-400 border-4 border-black rounded-full">
+    </div>
 
     <!-- Bottom right circle -->
-    <div class="absolute -bottom-64 -right-64 w-128 h-128 bg-yellow-300 border-4 border-black rounded-full"></div>
+    <div
+      class="absolute -bottom-32 -right-32 w-64 h-64 md:-bottom-64 md:-right-64 md:w-128 md:h-128 bg-yellow-300 border-4 border-black rounded-full">
+    </div>
 
     <p
       class="relative z-10 text-4xl md:text-6xl lg:text-8xl font-black text-black leading-tight uppercase tracking-tight max-w-6xl mx-auto display">
