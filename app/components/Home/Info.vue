@@ -27,6 +27,12 @@
       ULLAMCO LABORIS
       NISI UT ALIQUIP EX EA COMMODO CONSEQUAT
 
+      <span class="inline-flex flex-col text-sm leading-none align-middle">
+        <span>some text here</span>
+        <span>this is line 2</span>
+        <span>this is line 3</span>
+      </span>
+
       <UIcon name="i-mdi-star-shooting" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> DUIS AUTE
       <span class="text-black/40">IRURE DOLOR</span>
       IN

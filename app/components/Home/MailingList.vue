@@ -28,7 +28,7 @@ const handleSubmit = () => {
         class="text-4xl md:text-6xl font-black text-black mb-6 uppercase tracking-tight leading-none font-['Tilt_Neon'] tracking-widest">
         Join My Mailing List
       </h2>
-      <p class="text-lg md:text-xl text-neutral-800 font-['IBM_Plex_Sans'] pb-8 ">
+      <p class="text-lg md:text-xl text-neutral-800 font-['IBM_Plex_Sans'] pb-12">
         I write about peer coaching, creative projects I'm working on, and other fun stuff.
       </p>
 

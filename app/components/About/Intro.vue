@@ -5,12 +5,12 @@
     <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
       <!-- Profile Image -->
       <nuxt-img src="/susan-removebg.png" placeholder
-        class="rounded-full h-[200px] sm:h-[250px] md:h-[300px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-6 transition-all duration-300 border-4 mb-12 mt-8 md:[box-shadow:var(--md-shadow)]"
+        class="rounded-full h-[200px] sm:h-[250px] md:h-[300px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-6 transition-all duration-300 border-4 border-black mb-12 mt-8 md:[box-shadow:var(--md-shadow)]"
         style="box-shadow: -3px 3px 0px 0px rgba(0,0,0,1), -6px 6px 0px 0px rgba(0,0,0,1); --md-shadow: -6px 6px 0px 0px rgba(0,0,0,1), -12px 12px 0px 0px rgba(0,0,0,1), -18px 18px 0px 0px rgba(0,0,0,1);" />
 
       <!-- Intro Text -->
       <h2 class="text-3xl md:text-5xl font-black text-black mb-6 uppercase display">
-        Hi, I'm Susan.
+        Hi, I'm Shan Shan.
       </h2>
 
       <p class="text-xl md:text-2xl text-black font-bold max-w-2xl leading-relaxed">

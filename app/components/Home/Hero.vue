@@ -19,14 +19,14 @@
         class="text-center md:text-left text-5xl sm:text-6xl md:text-8xl font-bold mb-8 text-black max-w-[18ch] leading-tight">
         PEER COACHING FOR COOL
         FOLKS</h1>
-      <button
-        class="mx-auto md:mx-0 bg-emerald-400 border-4 border-black px-8 py-4 text-2xl font-bold text-black shadow-[-8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-4px] hover:translate-y-[4px] transition-all duration-150">
+      <UButton
+        class="mx-auto md:mx-0 bg-emerald-400 border-4 border-black px-7 md:px-8 py-3 md:py-4 text-xl md:text-2xl font-bold text-black shadow-[-8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-4px] hover:translate-y-[4px] transition-all duration-150 cursor-pointer rounded-none">
         LEARN MORE
-      </button>
+      </UButton>
     </div>
-    <div class="w-full md:w-1/2 flex justify-center relative z-10">
+    <div class="w-full md:w-1/2 flex justify-center relative z-10 ">
       <nuxt-img src="/susan-removebg.png" placeholder
-        class="rounded-full h-[300px] sm:h-[400px] md:h-[600px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-4 ease-in-out transition-all duration-300 border-4 md:[box-shadow:var(--md-shadow)]"
+        class="rounded-full h-[300px] sm:h-[400px] md:h-[600px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-4 ease-in-out transition-all duration-300 border-4 border-black md:[box-shadow:var(--md-shadow)]"
         style="box-shadow: -5px 5px 0px 0px rgba(0,0,0,1), -10px 10px 0px 0px rgba(0,0,0,1); --md-shadow: -10px 10px 0px 0px rgba(0,0,0,1), -20px 20px 0px 0px rgba(0,0,0,1), -30px 30px 0px 0px rgba(0,0,0,1), -40px 40px 0px 0px rgba(0,0,0,1);" />
     </div>
   </div>
