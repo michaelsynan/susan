@@ -3,7 +3,7 @@
 <template>
   <div class="py-6 md:py-12 px-6 bg-yellow-50 border-b-4 border-black">
     <div class="max-w-4xl mx-auto text-center py-20">
-      <h2 id="about-me" class="text-4xl md:text-6xl font-black text-black mb-12 uppercase !leading-normal">
+      <h2 id="about-me" class="text-4xl md:text-6xl font-black text-black mb-12 uppercase !leading-normal scroll-mt-24">
         A background in community mental health, advocacy, and street medicine
       </h2>
 

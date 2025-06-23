@@ -4,6 +4,7 @@ const isMenuOpen = ref(false)
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
+
 </script>
 
 <template>
@@ -18,7 +19,7 @@ const toggleMenu = () => {
         class="text-lg font-semibold text-black hover:text-emerald-600 transition-colors cool border-b-4 border-transparent hover:border-black">
         HOME
       </NuxtLink>
-      <NuxtLink to="/about"
+      <NuxtLink to="about"
         class="text-lg font-semibold text-black hover:text-emerald-600 transition-colors cool border-b-4 border-transparent hover:border-black">
         ABOUT
       </NuxtLink>
@@ -46,10 +47,10 @@ const toggleMenu = () => {
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
           HOME
         </NuxtLink>
-        <NuxtLink @click="toggleMenu" to="/about"
+        <button @click="navigateToAboutWork"
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
           ABOUT
-        </NuxtLink>
+        </button>
         <NuxtLink @click="toggleMenu" to="/services"
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
           SERVICES

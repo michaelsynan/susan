@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const form = ref({
   name: '',
@@ -26,6 +26,41 @@ const serviceOptions = [
   { value: 'peer-coaching', label: 'PEER COACHING' },
   { value: 'general', label: 'GENERAL QUESTIONS' }
 ]
+
+const isDropdownOpen = ref(false)
+const selectedServiceLabel = ref('SELECT A SERVICE')
+const dropdownRef = ref<HTMLElement | null>(null)
+
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value
+}
+
+const selectService = (option: any) => {
+  form.value.service = option.value
+  selectedServiceLabel.value = option.label
+  isDropdownOpen.value = false
+  // Clear error when service is selected
+  if (option.value) {
+    errors.value.service = ''
+  }
+}
+
+// Close dropdown when clicking outside
+const handleClickOutside = (event: Event) => {
+  if (dropdownRef.value && !dropdownRef.value.contains(event.target as Node)) {
+    isDropdownOpen.value = false
+  }
+}
+
+// Add event listener when component mounts
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+// Remove event listener when component unmounts
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
+})
 
 const validateEmail = (email: string) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -141,13 +176,33 @@ const handleSubmit = async () => {
             <label class="block text-lg font-bold text-black mb-2 uppercase">
               SERVICE *
             </label>
-            <select v-model="form.service"
-              class="w-full px-6 py-4 text-lg font-bold text-black bg-white border-4 border-black shadow-[-6px_6px_0px_0px_rgba(0,0,0,1)] focus:shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[-3px] focus:translate-y-[3px] transition-all duration-150 outline-none uppercase"
-              :class="{ '!border-red-500': errors.service }">
-              <option v-for="option in serviceOptions" :key="option.value" :value="option.value">
-                {{ option.label }}
-              </option>
-            </select>
+            <div class="relative" ref="dropdownRef">
+              <button type="button" @click="toggleDropdown"
+                class="w-full px-6 py-4 text-lg font-bold text-black bg-white border-4 border-black shadow-[-6px_6px_0px_0px_rgba(0,0,0,1)] focus:shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[-3px] focus:translate-y-[3px] transition-all duration-150 outline-none uppercase flex justify-between items-center"
+                :class="{ '!border-red-500': errors.service, 'shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] translate-x-[-3px] translate-y-[3px]': isDropdownOpen }">
+                <span :class="{ 'text-gray-500': selectedServiceLabel === 'SELECT A SERVICE' }">{{ selectedServiceLabel
+                  }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-150"
+                  :class="{ 'rotate-180': isDropdownOpen }" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+
+              <div v-if="isDropdownOpen"
+                class="absolute z-20 w-full bg-white border-4 border-black mt-2 shadow-[-6px_6px_0px_0px_rgba(0,0,0,1)] overflow-hidden"
+                style="margin-left: -5px;">
+                <div v-for="(option, index) in serviceOptions" :key="option.value" @click="selectService(option)"
+                  class="cursor-pointer px-6 py-4 text-lg font-bold text-black hover:bg-yellow-300 transition-all duration-150 border-b-2 border-black last:border-b-0"
+                  :class="{
+                    'bg-yellow-200': form.service === option.value,
+                    'text-gray-500': option.value === '',
+                    'hover:bg-yellow-400': option.value !== ''
+                  }">
+                  {{ option.label }}
+                </div>
+              </div>
+            </div>
             <div class="h-6 mt-2">
               <p v-if="errors.service" class="!text-red-500 font-bold text-sm">
                 {{ errors.service }}
