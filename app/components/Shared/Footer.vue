@@ -15,12 +15,17 @@
           TERMS OF SERVICE
         </NuxtLink>
       </div> -->
+      <!-- <p class="text-gray-500 text-sm">
+        Website Design by Formwork Studios
+      </p> -->
 
       <!-- Instagram Icon -->
       <div class="bg-emerald-400 border-4 border-black rounded-full p-4 w-16 h-16 flex items-center justify-center">
         <UIcon name="i-mdi-instagram" class="text-black text-3xl" />
       </div>
     </div>
+
+
   </footer>
 </template>
 
