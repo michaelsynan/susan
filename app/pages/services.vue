@@ -4,7 +4,7 @@
   <div>
     <ServicesIntro />
     <ServicesAll />
-    <SharedContact />
+    <Shared Contact />
   </div>
 </template>
 

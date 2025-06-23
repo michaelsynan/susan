@@ -4,9 +4,7 @@
   <footer class="bg-yellow-50 border-t-4 border-black py-4 px-6">
     <div class="flex flex-row justify-between items-center">
       <!-- Logo/Title -->
-      <div class="text-lg md:text-xl font-black text-black uppercase transform -skew-y-3 display">
-        PEER COACHING
-      </div>
+      <SharedLogo />
 
       <!-- Privacy Policy and TOS -->
       <!-- <div class="hidden md:flex gap-4 text-xs">

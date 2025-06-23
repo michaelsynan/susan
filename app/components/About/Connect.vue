@@ -2,11 +2,7 @@
 
 <template>
   <div>
-    <AboutIntro />
-    <AboutExtra />
-    <AboutWork />
-
-    <SharedContact />
+    Component: About/Connect
   </div>
 </template>
 

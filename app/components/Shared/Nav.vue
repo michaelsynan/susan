@@ -10,10 +10,7 @@ const toggleMenu = () => {
   <nav
     class="flex flex-row justify-between items-center border-b-4 border-black py-4 px-6 bg-yellow-50 fixed w-full z-50">
     <!-- Logo/Title - ALWAYS VISIBLE -->
-    <NuxtLink to="/"
-      class="text-2xl font-bold display text-black hover:text-emerald-600 transition-colors transform -skew-y-3 cool z-[60] relative">
-      PEER COACHING
-    </NuxtLink>
+    <SharedLogo />
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex flex-row gap-8 items-center">

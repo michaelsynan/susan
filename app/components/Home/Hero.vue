@@ -16,13 +16,16 @@
 
     <div class="w-full md:w-1/2 flex flex-col items-start justify-center relative z-10 p-10 md:p-0">
       <h1
-        class="text-center md:text-left text-5xl sm:text-6xl md:text-8xl font-bold mb-8 text-black max-w-[18ch] leading-tight">
+        class="text-center md:text-left text-5xl sm:text-6xl md:text-8xl font-bold mb-4 text-black max-w-[18ch] leading-tight">
         PEER COACHING FOR COOL
         FOLKS</h1>
-      <UButton
+      <h2 class="text-center md:text-left text-xl md:text-2xl text-black mb-8 max-w-[55ch] leading-relaxed">
+        Gender & Social Justice Doula, Facilitator, and Peer Counseling
+      </h2>
+      <NuxtLink to="/about"
         class="mx-auto md:mx-0 bg-emerald-400 border-4 border-black px-7 md:px-8 py-3 md:py-4 text-xl md:text-2xl font-bold text-black shadow-[-8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-4px] hover:translate-y-[4px] transition-all duration-150 cursor-pointer rounded-none">
         LEARN MORE
-      </UButton>
+      </NuxtLink>
     </div>
     <div class="w-full md:w-1/2 flex justify-center relative z-10 ">
       <nuxt-img src="/susan-removebg.png" placeholder

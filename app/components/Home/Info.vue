@@ -13,31 +13,21 @@
       class="absolute -bottom-32 -right-32 w-64 h-64 md:-bottom-64 md:-right-64 md:w-128 md:h-128 bg-yellow-300 border-4 border-black rounded-full">
     </div>
 
-    <p
-      class="relative z-10 text-4xl md:text-6xl lg:text-8xl font-black text-black leading-tight uppercase tracking-tight max-w-6xl mx-auto display">
-      LOREM IPSUM DOLOR SIT AMET CONSECTETUR
-      <UIcon name="i-mdi-hands-pray" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> ADIPISCING ELIT
-      SED DO
-      EIUSMOD
-      TEMPOR <span class="text-black/30">INCIDIDUNT</span> UT LABORE ET DOLORE MAGNA ALIQUA UT <span
-        class="text-black/40">ENIM AD</span> MINIM VENIAM
-      QUIS
-      <UIcon name="i-mdi-balloon" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> nostrud
-      EXERCITATION
-      ULLAMCO LABORIS
-      NISI UT ALIQUIP EX EA COMMODO CONSEQUAT
+    <div class="relative z-10 max-w-6xl mx-auto text-center">
+      <p
+        class="text-4xl md:text-6xl lg:text-8xl font-black text-black leading-tight uppercase tracking-tight display mb-8">
+        I witness and support transformation in people's lives. As a peer counselor, I see myself as a mentor and
+        friend, and a doula and guide through life's transitions and transformations.
+        <UIcon name="i-mdi-heart-handshake" class="text-emerald-400 inline-block align-middle -mt-2 md:-mt-6" />
+        Through conversations, workshops, and skill sharing, we will explore healing outside of conventional therapy and
+        the medical-industrial complex.
+      </p>
 
-      <span class="inline-flex flex-col text-sm leading-none align-middle">
-        <span>some text here</span>
-        <span>this is line 2</span>
-        <span>this is line 3</span>
-      </span>
-
-      <UIcon name="i-mdi-star-shooting" class="text-yellow-500 inline-block align-middle -mt-2 md:-mt-6" /> DUIS AUTE
-      <span class="text-black/40">IRURE DOLOR</span>
-      IN
-      REPREHENDERIT
-    </p>
+      <NuxtLink to="/about"
+        class="inline-block bg-emerald-400 border-4 border-black px-8 py-4 text-xl font-bold text-black shadow-[-8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-4px] hover:translate-y-[4px] transition-all duration-150 uppercase">
+        READ MORE ABOUT MY WORK
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
