@@ -47,10 +47,10 @@ const toggleMenu = () => {
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
           HOME
         </NuxtLink>
-        <button @click="navigateToAboutWork"
+        <NuxtLink @click="toggleMenu" to="/about"
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
           ABOUT
-        </button>
+        </NuxtLink>
         <NuxtLink @click="toggleMenu" to="/services"
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
           SERVICES
