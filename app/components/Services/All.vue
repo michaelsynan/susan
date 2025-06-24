@@ -22,7 +22,7 @@
               IN-PERSON
             </h2>
           </div>
-          <ul class="text-lg md:text-xl text-black !leading-loose list-disc list-inside space-y-2">
+          <ul class="text-lg md:text-xl text-black !leading-loose list-disc-fix space-y-2">
             <li>In person sessions on the weekend (1 hour)</li>
             <li>Crisis support (possibly in person)</li>
             <li>Virtual/in person COVID-friendly workshop (when held in person)</li>
@@ -38,7 +38,7 @@
               VIRTUAL
             </h2>
           </div>
-          <ul class="text-lg md:text-xl text-black !leading-loose list-disc list-inside space-y-2">
+          <ul class="text-lg md:text-xl text-black !leading-loose list-disc-fix space-y-2">
             <li>Initial needs assessment - a quick chat to figure out what you need and what you're looking for</li>
             <li>Crisis support (by text, email)</li>
             <li>Virtual sessions (tele-coaching, 1 hour)</li>
@@ -55,7 +55,7 @@
               RESOURCE SOURCING
             </h2>
           </div>
-          <ul class="text-lg md:text-xl text-black !leading-loose list-disc list-inside space-y-2">
+          <ul class="text-lg md:text-xl text-black !leading-loose list-disc-fix space-y-2">
             <li>Mutual aid pod / community needs mapping / exploring - explore what you need to have more mutual aid and
               community in your life</li>
             <li>Workshops on disability justice, sex positivity, polyamory, mutual aid</li>

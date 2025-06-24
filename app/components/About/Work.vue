@@ -19,7 +19,7 @@
         around:
       </p>
 
-      <ul class="text-xl md:text-2xl text-black !leading-loose mb-8 text-left max-w-3xl mx-auto list-disc list-inside">
+      <ul class="text-xl md:text-2xl text-black !leading-loose mb-8 text-left max-w-3xl mx-auto list-disc-fix">
         <li class="mb-2">Navigating relationships and polyamory</li>
         <li class="mb-2">Gender transition or other identity shifts and major life transitions</li>
         <li class="mb-2">Exploring gender transition, polyamory, or neurodivergent identities for the first time</li>
@@ -49,7 +49,7 @@
         <strong>I love processing!</strong> Through transformational conversations around identity, I help people to:
       </p>
 
-      <ul class="text-xl md:text-2xl text-black !leading-loose mb-8 text-left max-w-3xl mx-auto list-disc list-inside">
+      <ul class="text-xl md:text-2xl text-black !leading-loose mb-8 text-left max-w-3xl mx-auto list-disc-fix">
         <li class="mb-2">Find more stability and congruence;</li>
         <li class="mb-2">Transform their lives and relationships;</li>
         <li class="mb-2">Make more space for creativity, openness, open-heartedness, laughing, rest, nature, hugs, trans
