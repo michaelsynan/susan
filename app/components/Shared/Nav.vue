@@ -9,7 +9,7 @@ const toggleMenu = () => {
 
 <template>
   <nav
-    class="flex flex-row justify-between items-center border-b-4 border-black py-4 px-6 bg-yellow-50 fixed w-full z-50">
+    class="flex flex-row justify-between items-center border-b-4 border-black py-4 px-6 bg-yellow-50 fixed w-full z-[80]">
     <!-- Logo/Title - ALWAYS VISIBLE -->
     <SharedLogo />
 
@@ -35,13 +35,13 @@ const toggleMenu = () => {
 
     <!-- Mobile Menu Button -->
     <button @click="toggleMenu"
-      class="md:hidden text-lg font-bold text-black z-[60] relative border-4 border-black bg-white w-24 h-12 flex items-center justify-center">
+      class="md:hidden text-lg font-bold text-black z-[90] relative border-4 border-black bg-white w-24 h-12 flex items-center justify-center">
       {{ isMenuOpen ? 'CLOSE' : 'MENU' }}
     </button>
 
     <!-- Mobile Menu Overlay -->
     <div v-if="isMenuOpen"
-      class="fixed inset-0 bg-yellow-50 z-40 flex flex-col items-center justify-center md:hidden pt-20">
+      class="fixed inset-0 bg-yellow-50 z-[70] flex flex-col items-center justify-center md:hidden pt-20">
       <div class="flex flex-col gap-8 text-center">
         <NuxtLink @click="toggleMenu" to="/"
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">

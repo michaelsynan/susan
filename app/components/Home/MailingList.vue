@@ -25,7 +25,7 @@ const handleSubmit = () => {
   <div class="py-42 border-t-4 px-6 bg-yellow-50">
     <div class="max-w-4xl mx-auto text-center">
       <h2
-        class="text-4xl md:text-6xl font-black text-black mb-6 uppercase tracking-tight leading-none font-['Tilt_Neon'] tracking-widest">
+        class="text-4xl md:text-6xl font-black text-black mb-6 uppercase tracking-tight !leading-normal font-['Tilt_Neon'] tracking-widest ">
         Join My Mailing List
       </h2>
       <p class="text-lg md:text-xl text-neutral-800 font-['IBM_Plex_Sans'] pb-12">

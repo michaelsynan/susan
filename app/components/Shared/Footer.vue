@@ -4,7 +4,9 @@
   <footer class="bg-yellow-50 border-t-4 border-black py-4 px-6">
     <div class="flex flex-row justify-between items-center">
       <!-- Logo/Title -->
-      <SharedLogo />
+      <div class="z-10 relative">
+        <SharedLogo />
+      </div>
 
       <!-- Privacy Policy and TOS -->
       <!-- <div class="hidden md:flex gap-4 text-xs">
