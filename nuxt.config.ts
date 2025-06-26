@@ -20,7 +20,6 @@ export default defineNuxtConfig({
   site: {
     url: "https://shanshanpeercoaching.com",
     name: "Shan Shan Peer Coaching",
-    // ...etc
   },
   css: ["~/assets/css/main.css"],
   app: {

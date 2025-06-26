@@ -41,7 +41,7 @@ const toggleMenu = () => {
 
     <!-- Mobile Menu Overlay -->
     <div v-if="isMenuOpen"
-      class="fixed inset-0 bg-yellow-50 z-[70] flex flex-col items-center justify-center md:hidden pt-20">
+      class="fixed inset-0 bg-yellow-50 z-[70] flex flex-col items-center justify-center md:hidden pt-0">
       <div class="flex flex-col gap-8 text-center">
         <NuxtLink @click="toggleMenu" to="/"
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
