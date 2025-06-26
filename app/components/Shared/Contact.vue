@@ -6,16 +6,16 @@ const isMenuOpen = ref(false)
   <div
     class="relative py-16 md:py-32 px-6 bg-yellow-300 min-h-[400px] flex items-center justify-center overflow-hidden">
     <!-- Large yellow-50 circle that expands beyond container -->
-    <div class="absolute inset-0 flex items-center justify-center">
-      <div class="w-[70%] aspect-square bg-yellow-50 border-8 border-black rounded-full"></div>
+    <div class="absolute -inset-16 flex items-center justify-center">
+      <div class="w-[140%] md:w-[70%] aspect-square bg-yellow-50 border-8 border-black rounded-full"></div>
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl md:text-6xl font-black text-black mb-8 uppercase display">
+      <h1 class="text-4xl md:text-6xl font-black text-black mb-8 uppercase display">
         LET'S CONNECT
-      </h2>
+      </h1>
 
-      <p class="text-lg md:text-xl text-black mb-12 leading-relaxed max-w-2xl mx-auto">
+      <p class="text-lg md:text-2xl text-black mb-12 !leading-relaxed max-w-2xl mx-auto">
         Ready to get started? I'd love to talk to you and hear your story. Feel free to reach out, whether you want
         coaching or just would like to connect.
       </p>

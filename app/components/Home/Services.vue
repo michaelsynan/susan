@@ -5,7 +5,7 @@ const services = ref([
     items: [
       "In person sessions on the weekend (1 hour)",
       "Crisis support (possibly in person)",
-      "Virtual/in person COVID-friendly workshop (when held in person)"
+      "Virtual/in person COVID-friendly workshop"
     ],
     bgColor: "bg-emerald-400",
     textColor: "text-emerald-400",
@@ -17,7 +17,7 @@ const services = ref([
       "Initial needs assessment",
       "Crisis support (by text, email)",
       "Virtual sessions (tele-coaching, 1 hour)",
-      "Virtual/in person COVID-friendly workshop (when held virtually)"
+      "Virtual/in person COVID-friendly workshop"
     ],
     bgColor: "bg-yellow-300",
     textColor: "text-yellow-300",
@@ -50,7 +50,7 @@ const navigateToService = (anchor: string) => {
       <div v-for="service in services" :key="service.title"
         class="flex-1 border-4 border-black p-8 shadow-[-12px_12px_0px_0px_rgba(0,0,0,1)] flex flex-col"
         :class="service.bgColor">
-        <h3 class="text-2xl md:text-3xl font-black text-black mb-4 uppercase">
+        <h3 class="text-2xl md:text-3xl font-black text-black mb-4 uppercase text-center">
           {{ service.title }}
         </h3>
         <p class="text-lg text-black mb-6 leading-relaxed flex-grow">

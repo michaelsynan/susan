@@ -8,7 +8,7 @@
     <SharedFooter />
 
     <!-- Cursor Star - Hidden on mobile -->
-    <div ref="star" class="fixed pointer-events-none z-50 text-4xl transition-none hidden md:block"
+    <div ref="star" class="fixed pointer-events-none z-[100] text-4xl transition-none hidden md:block"
       style="transform: translate(-50%, -50%);">
       ⭐
     </div>

@@ -7,7 +7,7 @@
         Let's Chat OK?
       </h2>
 
-      <p class="text-lg md:text-xl text-black leading-relaxed max-w-2xl mx-auto">
+      <p class="text-xl md:text-2xl text-black leading-relaxed max-w-2xl mx-auto">
         Please fill out the form and I'll get back to you as soon as possible. I look forward to connecting with you!
       </p>
     </div>

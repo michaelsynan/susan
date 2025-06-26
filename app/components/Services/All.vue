@@ -3,11 +3,11 @@
 <template>
   <div class="py-16 px-6 bg-yellow-50 border-b-4 border-black">
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl md:text-6xl font-black text-black mb-12 uppercase text-center !leading-loose">
+      <h1 class="text-4xl md:text-6xl font-black text-black mb-8 uppercase text-center">
         OFFERINGS
       </h1>
 
-      <p class="text-lg md:text-xl text-black !leading-loose mb-12 text-center">
+      <p class="text-xl md:text-2xl text-black !leading-loose mb-12 text-center">
         Suggested contribution $50-100/hour sliding scale. Scholarships available for folks with financial need, please
         email for more information.
       </p>

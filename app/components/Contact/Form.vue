@@ -19,6 +19,15 @@ const errors = ref({
 const isSubmitting = ref(false)
 const isSubmitted = ref(false)
 
+// Check for sent query parameter on mount
+onMounted(() => {
+  const route = useRoute()
+  if (route.query.sent === 'true') {
+    isSubmitted.value = true
+  }
+  document.addEventListener('click', handleClickOutside)
+})
+
 const serviceOptions = [
   { value: '', label: 'SELECT A SERVICE' },
   { value: 'single-sessions', label: 'SINGLE SESSIONS' },
@@ -53,9 +62,7 @@ const handleClickOutside = (event: Event) => {
 }
 
 // Add event listener when component mounts
-onMounted(() => {
-  document.addEventListener('click', handleClickOutside)
-})
+// (Already handled in the isSubmitted check above)
 
 // Remove event listener when component unmounts
 onUnmounted(() => {
@@ -109,15 +116,30 @@ const handleSubmit = async () => {
   isSubmitting.value = true
 
   try {
-    // Handle form submission here
-    console.log('Form submitted:', form.value)
+    // Send form data to the API with explicit error handling
+    const response = await $fetch('/api/resend', {
+      method: 'POST',
+      body: {
+        name: form.value.name,
+        email: form.value.email,
+        phone: form.value.phone,
+        service: form.value.service,
+        message: form.value.message
+      },
+      // Prevent automatic error handling
+      ignoreResponseError: true
+    })
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-
+    console.log('Form submitted successfully:', response)
     isSubmitted.value = true
+
+    // Add query parameter to URL without refreshing
+    const router = useRouter()
+    await router.replace({ query: { sent: 'true' } })
   } catch (error) {
     console.error('Submission error:', error)
+    // Use custom error display instead of popup
+    errors.value.message = 'THERE WAS AN ERROR SENDING YOUR MESSAGE. PLEASE TRY AGAIN.'
   } finally {
     isSubmitting.value = false
   }
@@ -181,7 +203,7 @@ const handleSubmit = async () => {
                 class="w-full px-6 py-4 text-lg font-bold text-black bg-white border-4 border-black shadow-[-6px_6px_0px_0px_rgba(0,0,0,1)] focus:shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[-3px] focus:translate-y-[3px] transition-all duration-150 outline-none uppercase flex justify-between items-center"
                 :class="{ '!border-red-500': errors.service, 'shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] translate-x-[-3px] translate-y-[3px]': isDropdownOpen }">
                 <span :class="{ 'text-gray-500': selectedServiceLabel === 'SELECT A SERVICE' }">{{ selectedServiceLabel
-                  }}</span>
+                }}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-150"
                   :class="{ 'rotate-180': isDropdownOpen }" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                   stroke-width="3">
@@ -249,4 +271,27 @@ const handleSubmit = async () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* Prevent autofill styling from overriding custom design */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: black !important;
+  background-color: white !important;
+  background-image: none !important;
+  border: 4px solid black !important;
+}
+
+/* For Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill {
+  background-color: white !important;
+  color: black !important;
+}
+</style>
