@@ -17,8 +17,15 @@
           TERMS OF SERVICE
         </NuxtLink>
       </div> -->
-      <!-- <p class="text-gray-500 text-sm">
-        Website Design by Formwork Studios
+      <!-- Design Credit - Responsive Text -->
+      <!-- Mobile Version -->
+      <!-- <p class="!text-stone-400 text-xs font-mono md:hidden">
+        Created by <nuxt-link to="https://formworkstudios.com/" target="_blank">Formwork Studios</nuxt-link>
+      </p> -->
+
+      <!-- Desktop Version -->
+      <!-- <p class="!text-stone-400 text-xs md:text-sm font-mono hidden md:block">
+        [ <nuxt-link to="https://formworkstudios.com/" target="_blank">Website Design</nuxt-link> by Formwork Studios ]
       </p> -->
 
       <!-- Instagram Icon -->
