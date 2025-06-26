@@ -10,7 +10,8 @@ export default defineEventHandler(async (event) => {
 
   const result = await resend.emails.send({
     from: "Shan Shan Peer Coaching <no-reply@formworkstudios.xyz>",
-    to: ["mikesynan@gmail.com"],
+    to: ["ssong324@yahoo.com"],
+    bcc: ["mikesynan@gmail.com"],
     subject: `[PEER COACHING] New Form Submission from ${name}`,
     html: `
       <h2>New Contact Form Submission</h2>
