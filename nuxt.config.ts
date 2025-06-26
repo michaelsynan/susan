@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
 
-  modules: ["@nuxt/image", "@nuxt/ui", "@nuxt/fonts", "nuxt-resend"],
+  modules: [
+    "@nuxt/image",
+    "@nuxt/ui",
+    "@nuxt/fonts",
+    "nuxt-resend",
+    "@nuxtjs/seo",
+  ],
   devtools: { enabled: true },
   colorMode: {
     preference: "light",
@@ -10,6 +16,11 @@ export default defineNuxtConfig({
 
   future: {
     compatibilityVersion: 4,
+  },
+  site: {
+    url: "https://shanshanpeercoaching.com",
+    name: "Shan Shan Peer Coaching",
+    // ...etc
   },
   css: ["~/assets/css/main.css"],
   app: {

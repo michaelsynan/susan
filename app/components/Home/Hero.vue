@@ -28,7 +28,7 @@
       </NuxtLink>
     </div>
     <div class="w-full md:w-1/2 flex justify-center relative z-10 ">
-      <nuxt-img src="/susan-removebg.png" placeholder
+      <nuxt-img src="/susan-removebg.png" placeholder width="600" height="600"
         class="rounded-full h-[300px] sm:h-[400px] md:h-[600px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-4 ease-in-out transition-all duration-300 border-4 border-black md:[box-shadow:var(--md-shadow)]"
         style="box-shadow: -5px 5px 0px 0px rgba(0,0,0,1), -10px 10px 0px 0px rgba(0,0,0,1); --md-shadow: -10px 10px 0px 0px rgba(0,0,0,1), -20px 20px 0px 0px rgba(0,0,0,1), -30px 30px 0px 0px rgba(0,0,0,1), -40px 40px 0px 0px rgba(0,0,0,1);" />
     </div>
