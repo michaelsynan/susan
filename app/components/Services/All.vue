@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="py-16 px-6 bg-yellow-50 border-b-4 border-black">
-    <div class="max-w-4xl mx-auto">
+  <div class="pb-16 px-6 bg-yellow-50 border-b-4 border-black">
+    <div class="max-w-4xl mx-auto pt-16 md:pt-32">
       <h1 class="text-4xl md:text-6xl font-black text-black mb-8 uppercase text-center">
         OFFERINGS
       </h1>
