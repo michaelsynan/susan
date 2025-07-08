@@ -13,7 +13,7 @@ onMounted(() => {
 })
 </script>
 
-<template>
+<template class="min-h-screen">
   <div>
     <ServicesAll />
     <SharedContact />

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="py-16 px-6 bg-yellow-50 border-b-4 border-black h-screen flex items-center justify-center -mt-20">
+  <div class="py-16 px-6 bg-yellow-50 border-b-4 border-black min-h-screen flex items-center justify-center -mt-20">
     <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
       <!-- Profile Image -->
       <nuxt-img src="/susan-removebg.png" placeholder

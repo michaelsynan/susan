@@ -2,17 +2,8 @@
 
 <template>
   <div
-    class="relative flex flex-col-reverse md:flex-row-reverse items-center justify-center gap-4 overflow-hidden pb-20 border-b-4 pt-10 h-screen">
-    <!-- Gradient blobs -->
-    <!-- <div
-      class="absolute top-10 left-20 w-80 h-80 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full opacity-30 blur-xl z-0">
-    </div>
-    <div
-      class="absolute bottom-20 right-32 w-96 h-96 bg-gradient-to-bl from-emerald-300 to-emerald-600 rounded-full opacity-25 blur-2xl z-0">
-    </div>
-    <div
-      class="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-gradient-to-tr from-emerald-200 to-emerald-400 rounded-full opacity-20 blur-xl z-0">
-    </div> -->
+    class="relative flex flex-col-reverse md:flex-row-reverse items-center justify-center gap-4 overflow-hidden pb-20 border-b-4 pt-10 min-h-screen">
+
 
     <div class="w-full md:w-1/2 flex flex-col items-start justify-center relative z-10 p-10 md:p-0">
       <h1

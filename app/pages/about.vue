@@ -14,11 +14,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen">
     <AboutIntro />
     <AboutExtra />
     <AboutWork />
-
     <SharedContact />
   </div>
 </template>
