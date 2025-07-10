@@ -2,9 +2,9 @@
 
 <template>
   <footer class="bg-yellow-50 border-t-4 border-black py-4 px-6">
-    <div class="flex flex-row justify-between items-center">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
       <!-- Logo/Title -->
-      <div class="z-10 relative">
+      <div class="z-10 relative order-1 md:order-1">
         <SharedLogo />
       </div>
 
@@ -28,8 +28,15 @@
         [ <nuxt-link to="https://formworkstudios.com/" target="_blank">Website Design</nuxt-link> by Formwork Studios ]
       </p> -->
 
+      <!-- Design Credit -->
+      <p class="!text-stone-400 text-xs md:text-sm font-mono order-3 md:order-2">
+        <NuxtLink to="https://formworkstudios.com/" target="_blank" class="hover:underline">Website Design</NuxtLink> by
+        Formwork Studios
+      </p>
+
       <!-- Instagram Icon -->
-      <div class="bg-emerald-400 border-4 border-black rounded-full p-4 w-16 h-16 flex items-center justify-center">
+      <div
+        class="bg-emerald-400 border-4 border-black rounded-full p-4 w-16 h-16 flex items-center justify-center order-2 md:order-3">
         <UIcon name="i-mdi-instagram" class="text-black text-3xl" />
       </div>
     </div>
