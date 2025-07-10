@@ -203,7 +203,7 @@ const handleSubmit = async () => {
                 class="w-full px-6 py-4 text-lg font-bold text-black bg-white border-4 border-black shadow-[-6px_6px_0px_0px_rgba(0,0,0,1)] focus:shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[-3px] focus:translate-y-[3px] transition-all duration-150 outline-none uppercase flex justify-between items-center"
                 :class="{ '!border-red-500': errors.service, 'shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] translate-x-[-3px] translate-y-[3px]': isDropdownOpen }">
                 <span :class="{ 'text-gray-500': selectedServiceLabel === 'SELECT A SERVICE' }">{{ selectedServiceLabel
-                }}</span>
+                  }}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-150"
                   :class="{ 'rotate-180': isDropdownOpen }" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                   stroke-width="3">
@@ -263,9 +263,13 @@ const handleSubmit = async () => {
         <h3 class="text-3xl font-black text-black mb-4 uppercase">
           MESSAGE SENT!
         </h3>
-        <p class="text-lg font-bold text-black">
+        <p class="text-lg font-bold text-black mb-8">
           THANKS FOR REACHING OUT! I'LL GET BACK TO YOU SOON.
         </p>
+
+        <NuxtLink to="/" class="text-black font-bold text-lg hover:underline uppercase">
+          ← BACK TO HOME
+        </NuxtLink>
       </div>
     </div>
   </div>
