@@ -11,7 +11,8 @@
         I have a background working in community mental health, both professionally and through activist and mutual aid
         projects. I am in loving community with folks with neurodivergence and mental health issues – and I also
         experience these issues myself, so I understand what dysregulation feels like, and I have a wide range of tools
-        I can share with you. I also have specific experience working with other BIPOC, including folks who have
+        I can share with you. I also have specific experience working with other People of Color, including folks who
+        have
         recently immigrated to the United States through my organizing work and my job with Chinese American Service
         League.
       </p>
