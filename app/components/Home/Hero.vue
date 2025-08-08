@@ -19,9 +19,12 @@
       </NuxtLink>
     </div>
     <div class="w-full md:w-1/2 flex justify-center relative z-10 ">
-      <nuxt-img src="/susan-removebg.png" placeholder width="600" height="600"
-        class="rounded-full h-[300px] sm:h-[400px] md:h-[600px] w-[300px] sm:w-[400px] md:w-[600px] object-cover bg-emerald-400 hover:bg-yellow-400 hover:-rotate-4 ease-in-out transition-all duration-300 border-4 border-black md:[box-shadow:var(--md-shadow)]"
-        style="box-shadow: -5px 5px 0px 0px rgba(0,0,0,1), -10px 10px 0px 0px rgba(0,0,0,1); --md-shadow: -10px 10px 0px 0px rgba(0,0,0,1), -20px 20px 0px 0px rgba(0,0,0,1), -30px 30px 0px 0px rgba(0,0,0,1), -40px 40px 0px 0px rgba(0,0,0,1); aspect-ratio: 1/1;" />
+      <div
+        class="rounded-full h-[300px] sm:h-[400px] md:h-[600px] w-[300px] sm:w-[400px] md:w-[600px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-4 ease-in-out transition-all duration-300 border-4 border-black md:[box-shadow:var(--md-shadow)] overflow-hidden"
+        style="box-shadow: -5px 5px 0px 0px rgba(0,0,0,1), -10px 10px 0px 0px rgba(0,0,0,1); --md-shadow: -10px 10px 0px 0px rgba(0,0,0,1), -20px 20px 0px 0px rgba(0,0,0,1), -30px 30px 0px 0px rgba(0,0,0,1), -40px 40px 0px 0px rgba(0,0,0,1);">
+        <nuxt-img src="/peer-coaching-square.webp" placeholder width="600" height="600"
+          class="w-full h-full object-cover" />
+      </div>
     </div>
   </div>
 </template>

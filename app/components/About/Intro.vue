@@ -4,7 +4,7 @@
   <div class="py-16 px-6 bg-yellow-50 border-b-4 border-black min-h-screen flex items-center justify-center -mt-20">
     <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
       <!-- Profile Image -->
-      <nuxt-img src="/susan-removebg.png" placeholder
+      <nuxt-img src="/peer-coaching-poc-square.webp" placeholder
         class="rounded-full h-[200px] sm:h-[250px] md:h-[300px] bg-emerald-400 hover:bg-yellow-400 hover:-rotate-6 transition-all duration-300 border-4 border-black mb-12 mt-8 md:[box-shadow:var(--md-shadow)]"
         style="box-shadow: -3px 3px 0px 0px rgba(0,0,0,1), -6px 6px 0px 0px rgba(0,0,0,1); --md-shadow: -6px 6px 0px 0px rgba(0,0,0,1), -12px 12px 0px 0px rgba(0,0,0,1), -18px 18px 0px 0px rgba(0,0,0,1);" />
 
