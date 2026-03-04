@@ -27,6 +27,10 @@ const toggleMenu = () => {
         class="text-lg font-semibold text-black hover:text-emerald-600 transition-colors cool border-b-4 border-transparent hover:border-black">
         SERVICES
       </NuxtLink>
+      <NuxtLink to="/writing"
+        class="text-lg font-semibold text-black hover:text-emerald-600 transition-colors cool border-b-4 border-transparent hover:border-black">
+        WRITINGS
+      </NuxtLink>
       <NuxtLink to="/get-in-touch"
         class="bg-emerald-400 border-4 border-black px-6 py-2 text-lg font-bold text-black shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[-2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[2px] transition-all duration-150 cool">
         LET'S TALK!
@@ -54,6 +58,10 @@ const toggleMenu = () => {
         <NuxtLink @click="toggleMenu" to="/services"
           class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
           SERVICES
+        </NuxtLink>
+        <NuxtLink @click="toggleMenu" to="/writing"
+          class="text-3xl font-bold text-black hover:text-emerald-600 transition-colors cool">
+          WRITINGS
         </NuxtLink>
         <NuxtLink @click="toggleMenu" to="/get-in-touch"
           class="bg-emerald-400 border-4 border-black px-8 py-4 text-2xl font-bold text-black shadow-[-6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[-3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-3px] hover:translate-y-[3px] transition-all duration-150 cool">
